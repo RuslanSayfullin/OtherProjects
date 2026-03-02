@@ -1,5 +1,7 @@
 ##### _разработка Sayfullin R.R.
 
+https://ms-python.gallery.vsassets.io/_apis/public/gallery/publisher/ms-python/extension/python/2026.0.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?redirect=true&targetPlatform=linux-x64
+
 Инструкция актуальна для Linux-систем.
 ========================================================================================================================
 Используемые технологии:
