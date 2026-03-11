@@ -9,7 +9,7 @@ class Solution:
         result = 0
         for i in range(1, num + 1):
             is_sum_even = sum(int(symbol) for symbol in str(i)) % 2 == 0
-            print(i, sum(int(symbol) for symbol in str(i)))
+
             if is_sum_even:
                 result += 1
             
