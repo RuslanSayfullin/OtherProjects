@@ -8,11 +8,11 @@ from collections import Counter
 
 class Solution:
     def getLeastFrequentDigit(self, n: int) -> int:
-        n = str(n)
-        cnt = Counter(n)
-        cnt = sorted(cnt.items(), key=lambda x: (x[1], x[0]))
+        data = str(n)
+        cnt = Counter(data)
+        sorted_cnt = sorted(cnt.items(), key=lambda x: (x[1], x[0]))
 
-        result = int(cnt[0][0])
+        result = int(sorted_cnt[0][0])
         return result
 
 
