@@ -7,7 +7,7 @@
 
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        result = None
+        result = "None"
 
         list_s = list(s)
         list_t = list(t)
