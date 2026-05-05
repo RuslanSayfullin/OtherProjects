@@ -1,0 +1,27 @@
+# Алиса и Боб по очереди играют в игру, причём Алиса начинает первой.
+# Изначально на доске написано число n. В свой ход каждый игрок совершает ход, состоящий из:
+#   * Выбираем любое целое число x, для которого 0 < x < n и n % x == 0.
+#   * Замените число n на доске на n - x.
+# Кроме того, если игрок не может сделать ход, он проигрывает.
+# Возвращает true тогда и только тогда, когда Алиса выигрывает игру, при условии, что оба игрока играют оптимально.
+
+class Solution:
+    def divisorGame(self, n: int) -> bool:
+        alisa_won = True
+        print(list(range(n)))
+
+        return alisa_won
+
+n = 2
+example = Solution()
+result1 = example.divisorGame(n)
+# Алиса выбирает 1, и у Боба больше нет ходов.
+assert result1 is True
+print(result1)
+
+n = 3
+example = Solution()
+result2 = example.divisorGame(n)
+# Алиса выбирает 1, Боб выбирает 1, и у Алисы больше нет ходов.
+assert result2 is False
+print(result2)
