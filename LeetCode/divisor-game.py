@@ -7,10 +7,7 @@
 
 class Solution:
     def divisorGame(self, n: int) -> bool:
-        alisa_won = True
-        print(list(range(n)))
-
-        return alisa_won
+        return n % 2 == 0
 
 n = 2
 example = Solution()
