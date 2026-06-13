@@ -8,7 +8,7 @@ class Solution:
         summa: int = 0
 
         var_counter = Counter(nums)
-        print(var_counter)
+
         for key, value in var_counter.items():
             if value == 1:
                 summa += key
