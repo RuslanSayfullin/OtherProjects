@@ -1,15 +1,21 @@
 # Гармоничный массив определяется как массив, в котором разница между его максимальным и минимальным значениями равна 1.
 # Дано целочисленное множество nums, верните длину его самой длинной гармоничной подпоследовательности среди всех возможных подпоследовательностей.
 from typing import List
+from collections import Counter
 
 class Solution:
     def findLHS(self, nums: List[int]) -> int:
-        find_lhs: int = 0
-
+        count = Counter(nums)
+        max_len = 0
         
+        for x in count:
+            if x + 1 in count:
+                current_len = count[x] + count[x + 1]
+                max_len = max(max_len, current_len)
+        
+        return max_len
 
-        return find_lhs
-    
+
 example = Solution()
 
 nums = [1,3,2,2,5,2,3,7]
