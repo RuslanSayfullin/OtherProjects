@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import requests
 
 def benchmark(items):
     def other_func(func):
@@ -18,7 +19,7 @@ def benchmark(items):
 
 @benchmark(items=10)
 def get_webpage(url: str) -> str:
-    import requests
+
     page = requests.get(url)
     return page.status_code
 
