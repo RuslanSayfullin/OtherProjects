@@ -11,9 +11,6 @@ class Solution:
                 if nums[i] == nums[j]:
                     result += 1
 
-
-
-
         return result
 
 example = Solution()
