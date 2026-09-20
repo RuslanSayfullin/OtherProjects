@@ -11,6 +11,7 @@ class Solution:
             groups[key].append(s)
         
         return list(groups.values())
+    
 example = Solution()
 
 strs = ["eat","tea","tan","ate","nat","bat"]
