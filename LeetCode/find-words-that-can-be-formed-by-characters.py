@@ -20,7 +20,6 @@ class Solution:
             
             if flag:
                 result += len(word)
-        
 
         return result
 
